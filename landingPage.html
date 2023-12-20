@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="components/color_schemes.css" /> 
+        <link rel="stylesheet" href="components/popup.css" />
+        <link rel="stylesheet" href="components/to_do_widget.css" />
+        <link rel="stylesheet" href="components/main.css" /> 
+        <title> WidgeTea </title>
+    </head>
+
+  <body>
+
+    <div class="navigation_container">
+      <h1 class="welcome_header"> 
+        Good afternoon, Anya! 
+      </h1>
+      <button id="widget_editor_button" class="header_button" type="button">
+        Add Widgets
+      </button>
+      <button id="settings_button" class="header_button" type="button">
+        Settings
+      </button>
+    </div>
+
+    <div id="widget_grid"> 
+      <div class="widget_column" id="col1"> </div>
+      <div class="widget_column" id="col2"> </div>
+      <div class="widget_column" id="col3"> </div>
+      <div class="widget_column" id="col4"> </div>
+    </div>
+
+    <div id="widget_editor" class="popup_container"> 
+        <div id="edit_widgets_overlay" class="popup_overlay"> </div>
+        <div class="popup"> 
+          <h2> Add or Remove Widgets </h2>
+          <button id="add_to_do_list_button" class="settings_button" type="button">Add To-Do List</button>
+          <button id="remove_to_do_list_button" class="settings_button" type="button">Remove To-Do List</button>
+          <button id="add_weather_button" class="settings_button" type="button">Add Weather</button>
+          <button id="remove_weather_button" class="settings_button" type="button">Remove Weather</button>
+          <button id="add_reading_list_button" class="settings_button" type="button">Add Reading List</button>
+          <button id="remove_reading_list_button" class="settings_button" type="button">Remove Reading List</button>
+        </div>
+    </div>
+
+    <div id="settings" class="popup_container"> 
+      <div id="settings_overlay" class="popup_overlay"> </div>
+      <div class="popup"> 
+        <h2> Change Color Scheme </h2>
+        <button id="pink_color_scheme_button" class="settings_button" type="button">Pink</button>
+        <button id="orange_color_scheme_button" class="settings_button" type="button">Orange</button>
+        <button id="yellow_color_scheme_button" class="settings_button" type="button">Yellow</button>
+        <button id="green_color_scheme_button" class="settings_button" type="button">Green</button>
+        <button id="blue_color_scheme_button" class="settings_button" type="button">Blue</button>
+        <button id="purple_color_scheme_button" class="settings_button" type="button">Purple</button>
+        <button id="dark_green_color_scheme_button" class="settings_button" type="button">Dark Green</button>
+        <button id="dark_purple_color_scheme_button" class="settings_button" type="button">Dark Purple</button>
+        <button id="coffee_color_scheme_button" class="settings_button" type="button">Coffee</button>
+        <button id="grayscale_color_scheme_button" class="settings_button" type="button">Grayscale</button>
+      </div>
+    </div>
+
+    <script src="scripts/widget_editor.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    background-color: var(--color-primary-1);
+}
+
+div {
+    color: var(--color-primary-4);
+}
+
+h1 {
+    color: var(--color-primary-4);
+}
+
+#widget_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 16 columns */
+    height: 80vh;
+}
+
+.navigation_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome_header {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.header_button {
+    border: none;
+    background-color: var(--color-primary-0);
+    color: var(--color-primary-5);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.dragging{
+    opacity: 1 !important;
+    cursor: grab !important;
+}
+
+.widget_column {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.widget {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary-2);
+    width: inherit;
+}

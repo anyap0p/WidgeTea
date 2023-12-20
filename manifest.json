@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "WidgeTea",
+    "description": "Create customized landing page with various widgets",
+    "version": "1.0",
+    "icons": {
+      "16": "images/WidgeTea_Logo.png",
+      "32": "images/WidgeTea_Logo.png",
+      "48": "images/WidgeTea_Logo.png",
+      "128": "images/WidgeTea_Logo.png"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "landingPage.html"
+    },
+    "permissions": [
+      "storage",
+      "unlimitedStorage"
+    ]
+  }
